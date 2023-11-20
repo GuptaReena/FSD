@@ -1,0 +1,13 @@
+<h1 class="title">MY WIKIPEDIA</h1>
+<div class="ui segment container c1">
+            <h1><img src="assets/img/wikipedia.png" width="100" height="100" alt="Wikipedia">WIKIPEDIA |<span
+                    style="font-size: medium;">The Free Enclyopedia</span></h1>
+        
+        <form (submit)="onSubmit($event)">
+            <div class="ui action input">
+                <input type="text" placeholder="Search..." style="width: 45rem; margin-left:15rem; margin-top: 2rem;"
+                    #text (input)="term=text.value">
+                <button class="ui button" style="margin-top: 2rem;">Search</button>
+            </div>
+        </form>
+    </div>

@@ -1,0 +1,22 @@
+<div class="ui container ">
+<table class="ui celled table ui inverted grey table ">
+    <thead>
+      <tr><th>TITLE</th>
+      <th>WORDCOUNT</th>
+      <th>DESCRIPTION</th>
+    </tr></thead>
+    <tbody>
+      <tr *ngFor ="let page of pageList | paginate:{
+        itemsPerPage:pageSize,
+        currentPage:currentpage,
+        totalItems:count}; let i = index" >
+        <td>{{page.title}}</td>
+        <td>{{page.wordcount}}</td>
+        <td [innerHTML]="page.snippet"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="ui container center aligned">
+<pagination-controls (pageChange)="currentpage=$event"></pagination-controls>
+</div>
