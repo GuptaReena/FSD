@@ -35,7 +35,8 @@ Project6: Apnapedia API endpoint
 
 arg1:
 
-'https://en.wikipedia.org/w/api.phpmkm'
+![apnapedia](https://github.com/GuptaReena/FSD/assets/151419809/1cbca9ef-fc58-4e45-8560-935b8f5294fd)
+
 
 arg2:
 
